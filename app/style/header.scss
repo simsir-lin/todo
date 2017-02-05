@@ -1,0 +1,14 @@
+.header {
+  $height: 0.6rem;
+  $fontSize: 0.22rem;
+
+  background: #5677fc;
+  height: $height;
+  padding-left: $fontSize+($fontSize/2);
+
+  p {
+    color: #fff;
+    font-size: $fontSize;
+    line-height: $height;
+  }
+}

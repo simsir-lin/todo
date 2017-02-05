@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Microsoft Yahei", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+body {
+  background: #eee;
+}
+
+p,a,span,i {
+  font-size: 0.16rem;
+}
+
+.shadow {
+  box-shadow: rgba(0,0,0,.30) 0px 2px 5px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 0.24rem;
+  margin-top: 0.2rem;
+  color: #aaa;
+}

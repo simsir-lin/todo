@@ -1,0 +1,49 @@
+.issue {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 0.15rem;
+  box-shadow: rgba(0,0,0,.25) 0px 1px 3px;
+  background: #fff;
+
+  .content {
+    padding: 0.15rem 0rem;
+    padding-left: 0.18rem;
+  }
+
+  .title {
+    font-size: 0.32rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #616161;
+  }
+  .date {
+    color: #757575;
+    margin-top: 0.08rem;
+    font-size: 0.16rem;
+  }
+
+  &:hover {
+    box-shadow: rgba(0,0,0,.2) 0px 2px 6px;
+  }
+
+  .action {
+    $height: 0.5rem;
+    height: $height;
+    border-top: 1px solid #ccc;
+    a {
+      font-size: 0.26rem;
+      color: #757575;
+      line-height: $height;
+      float: right;
+      margin-right: 0.25rem;
+      text-decoration: none;
+    }
+    .btn-check:hover {
+      color: #5677fc;
+    }
+    .btn-drop:hover {
+      color: #e51c23;
+    }
+  }
+}
