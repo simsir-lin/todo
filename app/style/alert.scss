@@ -1,0 +1,51 @@
+.alert {
+  &:before {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .window {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 100;
+    transition: all 5s;
+
+    .content {
+      $margin: 0.2rem;
+      width: 90%;
+      background: #fff;
+      margin: 0 auto;
+      margin-top: 24vh;
+      box-shadow: 0 8px 24px 6px rgba(0,0,0,0.12);
+      border-radius: 5px;
+
+      .title {
+        $fontSize: 0.22rem;
+        font-size: $fontSize;
+        padding: $margin;
+        border-bottom: 1px solid #ccc;
+
+        i {
+          font-size: $fontSize;
+          float: right;
+          line-height: $fontSize+$fontSize/2;
+
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+      }
+
+      .text {
+        padding: $margin;
+      }
+    }
+  }
+}
