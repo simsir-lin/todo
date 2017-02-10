@@ -29,10 +29,8 @@ export default class Index extends React.Component {
   render() {
     return (
       <div>
-        <div style={this.state.style}>
-          <Header />
-          <Issues />
-        </div>
+        <Header title="待办事务" />
+        <Issues />
       </div>
     )
   }

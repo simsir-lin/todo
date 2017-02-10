@@ -10,7 +10,7 @@ export default class header extends React.Component {
   render() {
     return (
       <div className="shadow header">
-        <p><i className="fa fa-bars"></i>&nbsp;&nbsp;&nbsp;待办事务</p>
+        <p><i className="fa fa-bars"></i>&nbsp;&nbsp;&nbsp;{this.props.title}</p>
       </div>
     )
   }

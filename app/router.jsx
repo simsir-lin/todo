@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route, Redirect, IndexRoute, hashHistory } from 'react-router';
 
 import index from './page/index';
-import add from './page/add';
+import issue from './page/issue';
 
 class root extends React.Component{
     constructor(props) {
@@ -21,7 +21,7 @@ const RouteConfig = (
         <Route path="/" component={root}>
             <IndexRoute component={index} />//首页
             <Route path="index" component={index} />
-            <Route path="add" component={add} />
+            <Route path="issue(/:id)" component={issue} />
             <Redirect from='*' to='/'  />
         </Route>
     </Router>

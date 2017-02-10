@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import '../style/issue.scss';
+import '../style/issues.scss';
 
 import localstorage from '../utils/localstorage.jsx';
 import Alert from './alert';
@@ -51,15 +51,15 @@ class issues extends React.Component {
     }
 
     return (
-      <div>
+      <div className="issues">
         {this.state.list.map(item=>{
           return (
-            <div className="issue" key={item.id} onTouchStart={this.handleTouch.bind(this, item.content)} onTouchEnd={this.handlehandleTouchEnd.bind(this)}>
+            <Link to={'/issue/' + item.id} className="item" key={item.id} onTouchStart={this.handleTouch.bind(this, item.content)} onTouchEnd={this.handlehandleTouchEnd.bind(this)}>
               <div className="content">
                 <p className="title">{item.content}</p>
                 <p className="date">{item.date}</p>
               </div>
-            </div>
+            </Link>
           )
         })}
         <Alert isOpen={this.state.isShowModal} title="事件预览" text={this.state.content} />
