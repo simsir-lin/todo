@@ -1,0 +1,14 @@
+.btn-add {
+  $margin: 0.3rem;
+
+  display: block;
+  background: #ffeb3b;
+  position: fixed;
+  bottom: $margin;
+  right: $margin;
+  color: #fff;
+  font-size: 0.28rem;
+  padding: 0.2rem 0.27rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0,0,0,.1) 0px 3px 5px;
+}

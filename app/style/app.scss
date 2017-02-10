@@ -16,6 +16,10 @@ p,a,span,i,div,textarea {
   box-shadow: rgba(0,0,0,.30) 0px 2px 5px;
 }
 
+.hidden {
+  display: none;
+}
+
 .loading {
   text-align: center;
   font-size: 0.24rem;

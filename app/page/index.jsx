@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Header from '../component/header';
 import Issues from '../component/Issues';
+import BtnAdd from '../component/btnAdd';
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -29,8 +30,9 @@ export default class Index extends React.Component {
   render() {
     return (
       <div>
-        <Header title="待办事务" />
+        <Header title="待办事务" icon="fa-bars" />
         <Issues />
+        <BtnAdd />
       </div>
     )
   }
