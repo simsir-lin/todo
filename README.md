@@ -2,7 +2,7 @@
 react练习项目
 
 #### Preview
-![todo](https://github.com/simsir-lin/todo/preview.jpg)
+![todo](http://olf3xgrra.bkt.clouddn.com/todo-preview.jpg)
 
 #### setup
 * install nodejs
