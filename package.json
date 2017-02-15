@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server --config webpack.config.dev.js --inline --hot --quiet --host 0.0.0.0 & open http://localhost:8080/",
+    "serve": "webpack-dev-server --inline --hot --quiet --host 0.0.0.0 --port 3000",
     "build": "webpack --config webpack.config.dist.js"
   },
   "author": "simsir",

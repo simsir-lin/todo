@@ -39,7 +39,7 @@ export default class Issue extends React.Component {
 
   handleClick() {
     let caCheKey = 'issues';
-    let issues = LocalStorageService.get(caCheKey);
+    let issues = LocalStorageService.get(caCheKey) || [];
     if (this.state.isUpdate) {
       for (let i = 0; i < issues.length; i++) {
         if (issues[i].id == this.props.params.id) {

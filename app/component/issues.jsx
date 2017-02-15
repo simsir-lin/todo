@@ -18,12 +18,10 @@ class issues extends React.Component {
   }
 
   componentDidMount () {
-    setTimeout(() => {
-      this.setState({
-        list: localstorage.get('issues') || [],
-        loading: false
-      });
-    }, 1000);
+    this.setState({
+      list: localstorage.get('issues') || [],
+      loading: false
+    });
   }
 
   handleTouch(content) {
